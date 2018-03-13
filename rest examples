@@ -1,0 +1,9 @@
+GET https://api.github.com/users/a 
+
+###
+
+GET https://api.github.com/users/1
+
+###
+
+GET https://api.github.com/repos/jerriais/NREL
