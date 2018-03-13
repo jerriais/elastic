@@ -2,8 +2,35 @@ GET https://api.github.com/users/a
 
 ###
 
-GET https://api.github.com/users/1
+GET https://api.github.com/users/jerriais/orgs
 
 ###
 
-GET https://api.github.com/repos/jerriais/NREL
+POST https://api.github.com/repos/jerriais/test
+
+###
+
+curl -u "jerriais" https://api.github.com
+
+###
+
+curl -H "Authorization: token c32fdf6cc8e5a007a24404ee0ae1ba27ace41a73" https://api.github.com/repos/jerriais/NREL
+
+###
+
+curl -H "Authorization: token c32fdf6cc8e5a007a24404ee0ae1ba27ace41a73" https://api.github.com/users/jerriais
+
+###
+
+curl -H "Authorization: token c32fdf6cc8e5a007a24404ee0ae1ba27ace41a73"  https://api.github.com/zen
+
+###
+
+curl -i -H 'Authorization: token c32fdf6cc8e5a007a24404ee0ae1ba27ace41a73' \
+    -d '{ \
+        "name": "blog", \
+        "auto_init": true, \
+        "private": false, \
+        "gitignore_template": "nanoc" \
+      }' \
+    https://api.github.com/user/repos
